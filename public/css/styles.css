@@ -1,0 +1,118 @@
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+.navbar-nav  li a:hover {
+    color: #1abc9c !important;
+}
+
+.footer-padding {
+	padding-bottom: 60px;
+}
+
+.footer {
+	position:relative;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #1abc9c;
+}
+
+.footer p {
+	margin-top: 25px;
+  padding: 15px;
+	font-size: 12px;
+  color: #fff;
+
+}
+.s-text{
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 17px;
+
+}
+
+
+
+
+
+.effect11 {
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.effect11 .leftSide_mask,
+.effect11 .rightSide_mask {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 9;
+}
+
+.effect11 .leftSide_mask {
+    left: 0;
+    right: 50%;
+}
+
+.effect11 .rightSide_mask {
+    left: 50%;
+    right: 0;
+}
+
+.effect11 .leftSide_mask:hover ~ .rightSide {
+    transform: rotateY(0deg);
+}
+
+.effect11 .rightSide_mask:hover ~ .leftSide {
+    transform: rotateY(0deg);
+}
+
+/* Hover Elements */
+.effect11 .leftSide,
+.effect11 .rightSide {
+    background-color: rgba(0, 0, 0, 0.38);
+    position: absolute;
+    top: 0;
+    bottom: -1px;
+    transform: rotateY(90deg);
+    transition: transform .4s;
+}
+
+.effect11 .leftSide {
+    left: 0;
+    right: 50%;
+    transform-origin: top left;
+}
+
+.effect11 .rightSide {
+    left: 50%;
+    right: -1px;
+    transform-origin: top right;
+}
+
+/* Text*/
+.effect11 .leftSide h2,
+.effect11 .rightSide h2 {
+    background-color: transparent;
+}
+
+.effect11 h2 {
+    font-size: 17px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  color:#fff;
+}
